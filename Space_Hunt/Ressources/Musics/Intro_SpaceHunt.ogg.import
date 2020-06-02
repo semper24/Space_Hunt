@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Intro_SpaceHunt.ogg-94ce94c7d6f3be949911207a9f3dd834.oggstr"
+
+[deps]
+
+source_file="res://Ressources/Musics/Intro_SpaceHunt.ogg"
+dest_files=[ "res://.import/Intro_SpaceHunt.ogg-94ce94c7d6f3be949911207a9f3dd834.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

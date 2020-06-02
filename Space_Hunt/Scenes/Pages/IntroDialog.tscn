@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Pages/RichTextLabel.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Pages/RichTextLabel2.gd" type="Script" id=2]
+
+[node name="Polygon2D" type="Polygon2D"]
+position = Vector2( 0, -320 )
+scale = Vector2( 1, 0.909091 )
+color = Color( 0, 0, 0, 0 )
+antialiased = true
+polygon = PoolVector2Array( 1920, 1072, 1920, 896, 896, 896, 688, 896, 0, 896, 0, 972.524, 0, 1072 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -288.0 ]
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 16.0
+margin_top = 915.2
+margin_right = 240.0
+margin_bottom = 950.2
+bbcode_enabled = true
+bbcode_text = "SpaceHunt's team:"
+visible_characters = 0
+percent_visible = 0.0
+text = "SpaceHunt's team:"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 16.0
+margin_top = 968.0
+margin_right = 1424.0
+margin_bottom = 1038.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.01
+autostart = true
+[connection signal="timeout" from="Timer" to="RichTextLabel2" method="_on_Timer_timeout"]

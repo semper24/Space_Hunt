@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Low_life.ogg-91153cf6fa22e721df9f6eba82519167.oggstr"
+
+[deps]
+
+source_file="res://Ressources/Sounds/Low_life.ogg"
+dest_files=[ "res://.import/Low_life.ogg-91153cf6fa22e721df9f6eba82519167.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

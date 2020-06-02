@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/fireballB3.png-4e83b19c7af94fcac35ccb66f60006fa.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Ressources/Sprites/Boss Mage/attack/fireballB3.png"
+dest_files=[ "res://.import/fireballB3.png-4e83b19c7af94fcac35ccb66f60006fa.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=1
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

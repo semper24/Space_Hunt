@@ -1,0 +1,91 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://Ressources/Sprites/Golem/tile018.png" type="Texture" id=1]
+[ext_resource path="res://Ressources/Sprites/Golem/tile019.png" type="Texture" id=2]
+[ext_resource path="res://Ressources/Sprites/Golem/tile020.png" type="Texture" id=3]
+[ext_resource path="res://Ressources/Sprites/Golem/tile009.png" type="Texture" id=4]
+[ext_resource path="res://Ressources/Sprites/Golem/tile012.png" type="Texture" id=5]
+[ext_resource path="res://Ressources/Sprites/Golem/tile006.png" type="Texture" id=6]
+[ext_resource path="res://Ressources/Sprites/Golem/tile008.png" type="Texture" id=7]
+[ext_resource path="res://Ressources/Sprites/Golem/tile007.png" type="Texture" id=8]
+[ext_resource path="res://Ressources/Sprites/Golem/tile003.png" type="Texture" id=9]
+[ext_resource path="res://Ressources/Sprites/Golem/tile000.png" type="Texture" id=10]
+[ext_resource path="res://Ressources/Sprites/Golem/tile002.png" type="Texture" id=11]
+[ext_resource path="res://Ressources/Sprites/Golem/tile011.png" type="Texture" id=12]
+[ext_resource path="res://Ressources/Sprites/Golem/tile013.png" type="Texture" id=13]
+[ext_resource path="res://Ressources/Sprites/Golem/tile010.png" type="Texture" id=14]
+[ext_resource path="res://Ressources/Sprites/Golem/tile014.png" type="Texture" id=15]
+[ext_resource path="res://Ressources/Sprites/Golem/tile004.png" type="Texture" id=16]
+[ext_resource path="res://Ressources/Sprites/Golem/tile001.png" type="Texture" id=17]
+[ext_resource path="res://Ressources/Sprites/Golem/tile005.png" type="Texture" id=18]
+[ext_resource path="res://Ressources/Sprites/Golem/tile016.png" type="Texture" id=19]
+[ext_resource path="res://Ressources/Sprites/Golem/tile017.png" type="Texture" id=20]
+[ext_resource path="res://Ressources/Sprites/Golem/tile015.png" type="Texture" id=21]
+[ext_resource path="res://Ressources/Sprites/Golem/tile025.png" type="Texture" id=22]
+[ext_resource path="res://Ressources/Sprites/Golem/tile031.png" type="Texture" id=23]
+[ext_resource path="res://Ressources/Sprites/Golem/tile030.png" type="Texture" id=24]
+[ext_resource path="res://Ressources/Sprites/Golem/tile024.png" type="Texture" id=25]
+[ext_resource path="res://Ressources/Sprites/Golem/tile027.png" type="Texture" id=26]
+[ext_resource path="res://Ressources/Sprites/Golem/tile028.png" type="Texture" id=27]
+[ext_resource path="res://Ressources/Sprites/Golem/tile035.png" type="Texture" id=28]
+[ext_resource path="res://Ressources/Sprites/Golem/tile029.png" type="Texture" id=29]
+[ext_resource path="res://Ressources/Sprites/Golem/tile036.png" type="Texture" id=30]
+[ext_resource path="res://Ressources/Sprites/Golem/tile023.png" type="Texture" id=31]
+[ext_resource path="res://Ressources/Sprites/Golem/tile026.png" type="Texture" id=32]
+[ext_resource path="res://Ressources/Sprites/Golem/tile038.png" type="Texture" id=33]
+[ext_resource path="res://Ressources/Sprites/Golem/tile033.png" type="Texture" id=34]
+[ext_resource path="res://Ressources/Sprites/Golem/tile034.png" type="Texture" id=35]
+[ext_resource path="res://Ressources/Sprites/Golem/tile022.png" type="Texture" id=36]
+[ext_resource path="res://Ressources/Sprites/Golem/tile037.png" type="Texture" id=37]
+[ext_resource path="res://Ressources/Sprites/Golem/tile040.png" type="Texture" id=38]
+[ext_resource path="res://Ressources/Sprites/Golem/tile021.png" type="Texture" id=39]
+[ext_resource path="res://Ressources/Sprites/Golem/tile032.png" type="Texture" id=40]
+[ext_resource path="res://Ressources/Sprites/Golem/tile039.png" type="Texture" id=41]
+[ext_resource path="res://Scenes/Perso/IceWalker.gd" type="Script" id=42]
+[ext_resource path="res://Ressources/Sprites/explo/tile017.png" type="Texture" id=43]
+[ext_resource path="res://Ressources/Sprites/explo/tile016.png" type="Texture" id=44]
+[ext_resource path="res://Ressources/Sprites/explo/tile015.png" type="Texture" id=45]
+[ext_resource path="res://Ressources/Sprites/explo/tile012.png" type="Texture" id=46]
+[ext_resource path="res://Ressources/Sprites/explo/tile008.png" type="Texture" id=47]
+[ext_resource path="res://Ressources/Sprites/explo/tile013.png" type="Texture" id=48]
+[ext_resource path="res://Ressources/Sprites/explo/tile009.png" type="Texture" id=49]
+[ext_resource path="res://Ressources/Sprites/explo/tile014.png" type="Texture" id=50]
+[ext_resource path="res://Ressources/Sprites/explo/tile010.png" type="Texture" id=51]
+[ext_resource path="res://Ressources/Sprites/explo/tile007.png" type="Texture" id=52]
+[ext_resource path="res://Ressources/Sprites/explo/tile011.png" type="Texture" id=53]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 52 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 53 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "die",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 17 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 39 ), ExtResource( 36 ), ExtResource( 31 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 32 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 40 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 28 ), ExtResource( 30 ), ExtResource( 37 ), ExtResource( 33 ), ExtResource( 41 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "run",
+"speed": 25.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 48.0
+height = 96.0
+
+[node name="IceWalker" type="KinematicBody2D"]
+script = ExtResource( 42 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 32, -8 )
+scale = Vector2( 5, 1 )
+enabled = true
+cast_to = Vector2( 0, 105 )
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

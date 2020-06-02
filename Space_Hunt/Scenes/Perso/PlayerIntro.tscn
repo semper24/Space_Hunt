@@ -1,0 +1,104 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Ressources/Sprites/PlayerIntro.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Perso/PlayerIntro.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 32, 24, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 48, 24, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 112, 72, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 112, 0, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 16, 24 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 112, 0, 16, 24 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "Die",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 7.0
+height = 11.0
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0.629139, 0.900662 )
+colors = PoolColorArray( 0.223748, 0.223748, 0.223748, 1, 0.320313, 0.320313, 0.320313, 1 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 0.963257, -0.963253 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 7 )
+animation = "Run"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.8, 0.8 )
+limit_smoothed = true
+smoothing_enabled = true
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource( 8 )
+
+[node name="ParticleMove" type="CPUParticles2D" parent="."]
+position = Vector2( 2.5, 11.2 )
+emitting = false
+emission_shape = 1
+emission_sphere_radius = 0.01
+flag_align_y = true
+spread = 29.52
+gravity = Vector2( 0, -10 )
+initial_velocity = 15.0
+radial_accel = -0.34
+radial_accel_random = 0.26
+angle = 145.9
+color_ramp = SubResource( 9 )

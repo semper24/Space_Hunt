@@ -1,0 +1,50 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Ressources/Sprites/RageBall/Point4.png" type="Texture" id=1]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead3.png" type="Texture" id=2]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead2.png" type="Texture" id=3]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead5.png" type="Texture" id=4]
+[ext_resource path="res://Ressources/Sprites/RageBall/Point5.png" type="Texture" id=5]
+[ext_resource path="res://Ressources/Sprites/RageBall/Point2.png" type="Texture" id=6]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead1.png" type="Texture" id=7]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead6.png" type="Texture" id=8]
+[ext_resource path="res://Ressources/Sprites/RageBall/Point3.png" type="Texture" id=9]
+[ext_resource path="res://Ressources/Sprites/RageBall/Point1.png" type="Texture" id=10]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead4.png" type="Texture" id=11]
+[ext_resource path="res://Ressources/Sprites/RageBall/dead7.png" type="Texture" id=12]
+[ext_resource path="res://Ressources/Sprites/RageBall/Point6.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Objects/RageBall.gd" type="Script" id=14]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 17.9179
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+} ]
+
+[node name="RageBall" type="Area2D"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 14 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.8409, 4.97059 )
+shape = SubResource( 1 )
+
+[node name="timerDead" type="Timer" parent="."]
+wait_time = 0.9
+one_shot = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Idle"
+[connection signal="body_entered" from="." to="." method="_on_RageBall_body_entered"]
+[connection signal="timeout" from="timerDead" to="." method="_on_timerDead_timeout"]

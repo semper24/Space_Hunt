@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Ressources/Sprites/fireball/fire.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Objects/fireballBoss1.gd" type="Script" id=11]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 66, 33, 33 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "fire",
+"speed": 5.0
+} ]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 11 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "fire"
+flip_h = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -8, 0 )
+scale = Vector2( 0.8125, 0.8125 )
+polygon = PoolVector2Array( 0, -8, 8, -8, 8, -8, 16, 0, 16, 8, 8, 16, 0, 16, -8, 8, -8, 0 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 3, 5 )
+scale = Vector2( 1.3, 1.3 )
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

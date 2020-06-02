@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Bridge_Scene1.ogg-b2e8866bc6d1ca522475bf3cda37eaa8.oggstr"
+
+[deps]
+
+source_file="res://Ressources/Musics/Bridge_Scene1.ogg"
+dest_files=[ "res://.import/Bridge_Scene1.ogg-b2e8866bc6d1ca522475bf3cda37eaa8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
