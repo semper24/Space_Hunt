@@ -3,10 +3,10 @@ extends KinematicBody2D
 const UP = Vector2(0, -1)
 const GRAVITY = 20
 #RUN
-var max_speed = 250
+var max_speed = 290
 const ACCELERATION = 50
 #JUMP
-var JUMP = -450
+var JUMP = -470
 var Jumps = 1#(+1)
 #MOVE
 var motion = Vector2()
