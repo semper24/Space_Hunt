@@ -211,6 +211,22 @@ func Player_power_start():
 	$Sprite.play("Spawn0")
 	$SpawnTimeOne.start()
 
+func Player_power_down():
+	Up = true
+	$Position2D.position = Vector2(-44.936, 0.142)
+	posTarget = $Position2D
+	$Sprite.play("PowerDown2")
+	$TimerDown.start()
+	Dead = "Dead"
+	Run = "Run"
+	Idle = "Idle"
+	Jump = "Jump"
+	Fall = "Fall"
+	Die = "Die"
+	Idle_and_Shoot = "Idle and Shoot"
+	Run_and_Shoot = "Run and Shoot"
+	Jump_and_Shoot = "Jump and Shoot"
+
 func Player_power_up():
 	#while is_on_floor() != true:
 	#	motion.y += GRAVITY
@@ -232,6 +248,7 @@ func Player_power_up():
 	Idle_and_Shoot = "Idle and Shoot Up"
 	Run_and_Shoot = "Run and Shoot Up"
 	Jump_and_Shoot = "Idle and Shoot Up"
+	$TimerDownNow.start()
 
 func speed_change(new, new_speed):
 	speed_up = new
@@ -247,11 +264,9 @@ func _on_Ghost_Timer_timeout():
 		this_ghost.texture = $Sprite.frames.get_frame($Sprite.animation, $Sprite.frame)
 		this_ghost.flip_h = $Sprite.flip_h
 
-
 func _on_Ghost_end_timeout():
 	max_speed = 250
 	speed_up = 0
-
 
 func _on_SpawnTime_timeout():
 	Up = false
@@ -262,7 +277,6 @@ func _on_SpawnTime_timeout():
 func _on_SpawnTimeOne_timeout():
 	Player_power_up()
 
-
 func _on_active_timeout():
 	rageBar_on = false
 
@@ -272,9 +286,6 @@ func cac_hit():
 	boom.play()
 	boom.position = $Sprite/Cac/PositionArm.global_position
 	pass
-	
-	
-	
 
 func _on_Cac_body_entered(body):
 	if "IceWalker" in body.name:
@@ -305,4 +316,23 @@ func _on_cacAnime_timeout():
 
 func _on_collisionTimer_timeout():
 	$Sprite/Cac/hitboxCac.set_deferred("disabled", true)
+	pass # Replace with function body.
+
+func _on_TimerDown_timeout():
+	scale = Vector2(1, 1)
+	$HitboxUp.set_deferred("disabled", true)
+	$Hitbox.set_deferred("disabled", false)
+	$Sprite.play("PowerDown")
+	$TimerDown2.start()
+	pass # Replace with function body.
+
+func _on_TimerDown2_timeout():
+	Up = false
+	pass # Replace with function body.
+
+
+func _on_TimerDownNow_timeout():
+	Player_power_down()
+	$Control._on_rage_updatted(0, 0)
+	$Control/active.start()
 	pass # Replace with function body.

@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/Portal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Objects/RageBall.tscn" type="PackedScene" id=4]
 
 [node name="Iceland" type="Node2D"]
+position = Vector2( -5, 0 )
 
 [node name="Background" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -25,3 +27,15 @@ tile_data = PoolIntArray( 65477, 58, 0, 65478, 58, 0, 131012, 58, 0, 131013, 58,
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 437.56, 710.487 )
+
+[node name="RageBall" parent="." instance=ExtResource( 4 )]
+position = Vector2( 683.702, 711.334 )
+
+[node name="RageBall3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 738.307, 711.334 )
+
+[node name="RageBall2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 641.042, 710.197 )
+
+[node name="RageBall4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 610.895, 714.178 )
