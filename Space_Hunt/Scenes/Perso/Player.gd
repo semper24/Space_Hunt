@@ -195,6 +195,14 @@ func _physics_process(delta):#MAIN
 				damage(1)
 			if "MonsterBall" in get_slide_collision(i).collider.name:
 				damage(5)
+			if "IceWalker" in get_slide_collision(i).collider.name:
+				damage(5)
+			if "BossMageRes" in get_slide_collision(i).collider.name:
+				damage(100)
+			if "BossMageFirst" in get_slide_collision(i).collider.name:
+				damage(100)
+			if "bossFire" in get_slide_collision(i).collider.name:
+				damage(100)
 	var position = get_position()
 	if (position.y > 10000):
 		get_tree().change_scene("res://Scenes/Pages/GameOver.tscn")
@@ -302,10 +310,14 @@ func _on_Cac_body_entered(body):
 		body.dead(5)
 	if "BossMageRes" in body.name:
 		cac_hit()
-		body.dead(100)
+		body.dead(10)
 	if "BossMageFirst" in body.name:
 		cac_hit()
 		body.dead(10)
+	if "bossFire" in body.name:
+		cac_hit()
+		body.dead(10)
+	print(body.name)
 	pass # Replace with function body.
 	
 func _on_cacAnime_timeout():

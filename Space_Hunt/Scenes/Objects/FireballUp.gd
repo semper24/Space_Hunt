@@ -34,4 +34,6 @@ func _on_Area2D_body_entered(body):
 		body.dead(10)
 	if "BossMageRes" in body.name:
 		body.dead(10)
+	if "bossFire" in body.name:
+		body.dead(10)	
 	queue_free()

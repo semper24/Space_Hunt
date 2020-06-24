@@ -35,4 +35,6 @@ func _on_shoot_body_entered(body):
 		body.dead(1)
 	if "BossMageRes" in body.name:
 		body.dead(1)
+	if "bossFire" in body.name:
+		body.dead(1)
 	queue_free()

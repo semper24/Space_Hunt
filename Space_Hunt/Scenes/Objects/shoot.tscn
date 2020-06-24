@@ -5,35 +5,35 @@
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
-region = Rect2( 168, 208, 24, 16 )
+region = Rect2( 20, 209, 20, 19 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
-region = Rect2( 20, 209, 20, 19 )
+region = Rect2( 48, 209, 24, 19 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
-region = Rect2( 48, 209, 24, 19 )
+region = Rect2( 74, 209, 37, 19 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
-region = Rect2( 74, 209, 37, 19 )
+region = Rect2( 112, 209, 28, 19 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 112, 209, 28, 19 )
+region = Rect2( 168, 208, 24, 16 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ SubResource( 1 ) ],
-"loop": true,
-"name": "die",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "fire",
 "speed": 13.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "die",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=7]

@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Ressources/Sprites/Boss Mage/attack/fireballB4.png" type="Texture" id=1]
+[ext_resource path="res://Ressources/Sprites/Boss Mage/attack/fireballB3.png" type="Texture" id=2]
+[ext_resource path="res://Ressources/Sprites/Boss Mage/attack/fireballB5.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Objects/fireballBoss.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "fire",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 56.1084
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 0.929412, 0.960784, 0.411765, 1 )
+self_modulate = Color( 0.635294, 0.698039, 0.266667, 1 )
+position = Vector2( 32.5875, 43.3201 )
+rotation = 1.5708
+scale = Vector2( 0.988889, 1 )
+frames = SubResource( 1 )
+animation = "fire"
+frame = 1
+playing = true
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+visible = false
+position = Vector2( 5.41495, -3.15874 )
+scale = Vector2( -7.58416, 7.51171 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 1.20003, 2.36553 )
+rotation = -1.5708
+shape = SubResource( 2 )
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
