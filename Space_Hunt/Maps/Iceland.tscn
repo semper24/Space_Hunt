@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/Objects/RageBall.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Perso/BossMageFirst.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Objects/Star.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Objects/speed.tscn" type="PackedScene" id=7]
 
 [node name="Iceland" type="Node2D"]
 position = Vector2( -5, 0 )
@@ -47,3 +48,9 @@ position = Vector2( -3308.02, 658.632 )
 
 [node name="Star1" parent="." instance=ExtResource( 6 )]
 position = Vector2( -2796.08, 620.773 )
+
+[node name="RageBall5" parent="." instance=ExtResource( 4 )]
+position = Vector2( -2628.07, 591.226 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -2542.82, 674.248 )
