@@ -70,6 +70,14 @@ func _check_rage():
 		rageBar_on = false
 		Player_power_start()
 
+func _set_heal(heal):
+	hp = heal
+
+func _on_heal_perso(heal):
+	healBar_on = true
+	$HealBar/activeHeal.start()
+	hp = $HealBar._on_heal_Plus(heal)
+
 func manageRun():#RUN
 	_rage_bar_vis()
 	_heal_bar_vis()
@@ -297,7 +305,7 @@ func _on_Ghost_Timer_timeout():
 		this_ghost.flip_h = $Sprite.flip_h
 
 func _on_Ghost_end_timeout():
-	max_speed = 250
+	max_speed = 400
 	speed_up = 0
 
 func _on_SpawnTime_timeout():
