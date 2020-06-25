@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Ressources/Sprites/boss fire/Sans titre.png" type="Texture" id=9]
 [ext_resource path="res://Ressources/Sprites/boss fire/Sans titre1.png" type="Texture" id=10]
 [ext_resource path="res://Ressources/Sprites/Fire- ParallaxBackground.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Maps/Nether.gd" type="Script" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 59.4082, 75.2954 )
@@ -27,6 +28,7 @@ animations = [ {
 extents = Vector2( 29.6094, 68.4033 )
 
 [node name="Nether" type="Node2D"]
+script = ExtResource( 12 )
 
 [node name="portals" type="Node2D" parent="."]
 
@@ -61,8 +63,7 @@ scale = Vector2( 3.5, 3.5 )
 World = "res://Maps/Vanilla.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 14319.5, 537.743 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 702.965, 900.81 )
 
 [node name="FireS1" type="Position2D" parent="."]
 position = Vector2( 16735.6, 206.567 )

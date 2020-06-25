@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
@@ -8,9 +8,11 @@
 [ext_resource path="res://Scenes/Objects/Star.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Objects/speed.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Ressources/Sprites/W2 - ParallaxBackground.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Maps/Iceland.gd" type="Script" id=9]
 
 [node name="Iceland" type="Node2D"]
 position = Vector2( -5, 0 )
+script = ExtResource( 9 )
 
 [node name="Background" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -20,7 +22,6 @@ tile_data = PoolIntArray( 131073, 50, 0, 655479, 58, 0, 655505, 58, 0, 721014, 5
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -883.418, 591.618 )
-scale = Vector2( 1.5, 1.5 )
 hp = 1000
 
 [node name="Area2D" parent="." instance=ExtResource( 3 )]

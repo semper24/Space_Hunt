@@ -9,8 +9,6 @@
 [ext_resource path="res://Scenes/Worlds/IntroText.gd" type="Script" id=7]
 [ext_resource path="res://Ressources/Sprites/SpaceJam - Intro.png" type="Texture" id=8]
 
-
-
 [node name="World1Tile" type="Node2D"]
 script = ExtResource( 4 )
 

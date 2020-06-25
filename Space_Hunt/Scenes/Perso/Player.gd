@@ -140,6 +140,10 @@ func manageJump():#JUMP
 	if is_on_floor():
 		Jumps = 1
 		if Input.is_action_just_pressed("ui_up"):
+			var player = AudioStreamPlayer.new()
+			self.add_child(player)
+			player.stream = load("res://Ressources/Sounds/Jump.ogg")
+			player.play()
 			motion.y = JUMP
 	else:
 		if motion.y > 0:
@@ -153,6 +157,10 @@ func manageJump():#JUMP
 				$ParticleMove.emitting = true
 		motion.x = lerp(motion.x, 0, 0.05)
 		if Input.is_action_just_pressed("ui_up") && Jumps != 0:
+			var player = AudioStreamPlayer.new()
+			self.add_child(player)
+			player.stream = load("res://Ressources/Sounds/Jump.ogg")
+			player.play()
 			motion.y = JUMP
 			Jumps -= 1
 	if (stack > 0):
@@ -168,6 +176,10 @@ func _rage_upbar(rage, amount):
 		$Control/active.start()
 
 func damage(dmg):#TAKE DMG
+	var player = AudioStreamPlayer.new()
+	self.add_child(player)
+	player.stream = load("res://Ressources/Sounds/Hit.ogg")
+	player.play()
 	hp -= dmg
 	healBar_on = true
 	$HealBar/activeHeal.start()

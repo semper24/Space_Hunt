@@ -20,7 +20,7 @@ func _physics_process(delta):
 func _on_TextureButton_pressed():
 	zone.set_color(Color(0, 0, 0, 0.3))
 	if dialog.done == true:
-		get_tree().change_scene("res://Scenes/Worlds/Intro.tscn")
+		get_tree().change_scene("res://Maps/Vanilla.tscn")
 
 func _on_TextureButton2_pressed():
 	get_tree().quit()

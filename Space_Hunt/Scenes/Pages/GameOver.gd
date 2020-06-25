@@ -14,7 +14,7 @@ func _physics_process(delta):
 		$MarginContainer/VBoxContainer/VBoxContainer/Exit.grab_focus()
 
 func _on_Restart_pressed():
-	get_tree().change_scene("res://Scenes/Worlds/1-1.tscn")
+	get_tree().change_scene("res://Scenes/Pages/Menu.tscn")
 
 func _on_Exit_pressed():
 	get_tree().quit()
