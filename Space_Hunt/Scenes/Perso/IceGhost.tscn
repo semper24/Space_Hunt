@@ -1,13 +1,13 @@
 [gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Ressources/Sprites/alien/fireGhost5.png" type="Texture" id=1]
-[ext_resource path="res://Ressources/Sprites/alien/fireGhost6.png" type="Texture" id=2]
-[ext_resource path="res://Ressources/Sprites/alien/fireGhost3.png" type="Texture" id=3]
-[ext_resource path="res://Ressources/Sprites/alien/fireGhost4.png" type="Texture" id=4]
+[ext_resource path="res://Ressources/Sprites/alien/iceGhost2.png" type="Texture" id=1]
+[ext_resource path="res://Ressources/Sprites/alien/iceGhost1.png" type="Texture" id=2]
+[ext_resource path="res://Ressources/Sprites/alien/iceGhost4.png" type="Texture" id=3]
+[ext_resource path="res://Ressources/Sprites/alien/iceGhost3.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Perso/Alien.gd" type="Script" id=5]
 [ext_resource path="res://Ressources/Sprites/Explosion_2.png" type="Texture" id=6]
-[ext_resource path="res://Ressources/Sprites/alien/fireGhost1.png" type="Texture" id=7]
-[ext_resource path="res://Ressources/Sprites/alien/fireGhost2.png" type="Texture" id=8]
+[ext_resource path="res://Ressources/Sprites/alien/iceGhost5.png" type="Texture" id=7]
+[ext_resource path="res://Ressources/Sprites/alien/iceGhost6.png" type="Texture" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 6 )
@@ -44,16 +44,16 @@ animations = [ {
 "name": "die",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "run",
 "speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 42.8493, 57.3674 )
+extents = Vector2( 37.1004, 57.3674 )
 
-[node name="GhostFire" type="KinematicBody2D"]
+[node name="IceGhost" type="KinematicBody2D"]
 position = Vector2( -1.50739, 1.3176 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 5 )
@@ -67,13 +67,11 @@ cast_to = Vector2( 0, 65 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 light_mask = 1048575
-position = Vector2( 0.925019, -5.08447 )
-scale = Vector2( 0.988446, 0.941908 )
+position = Vector2( 1.99005, -0.808125 )
+scale = Vector2( 0.994937, 0.864265 )
 frames = SubResource( 8 )
 animation = "run"
-frame = 1
 speed_scale = 2.0
-playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
