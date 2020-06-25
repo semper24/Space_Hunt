@@ -35,6 +35,7 @@ var Jump_and_Shoot = "Jump and Shoot"
 var Up = false
 var fireball = null
 var rageBar_on = false
+var healBar_on = false
 var posTarget = null
 var boom = null
 var targetUp = Vector2(-13, 0)
@@ -58,6 +59,12 @@ func _rage_bar_vis():
 	else:
 		$Control.hide()
 
+func _heal_bar_vis():
+	if healBar_on == true:
+		$HealBar.show()
+	else:
+		$HealBar.hide()
+
 func _check_rage():
 	if $Control._rage_max() == true:
 		rageBar_on = false
@@ -65,6 +72,7 @@ func _check_rage():
 
 func manageRun():#RUN
 	_rage_bar_vis()
+	_heal_bar_vis()
 	if Up == true:
 		return
 	if is_dead == true:
@@ -161,6 +169,9 @@ func _rage_upbar(rage, amount):
 
 func damage(dmg):#TAKE DMG
 	hp -= dmg
+	healBar_on = true
+	$HealBar/activeHeal.start()
+	$HealBar._on_heal_updatted(dmg)
 	if hp < 1:
 		is_dead = true
 		motion = Vector2(0, 0)
@@ -349,3 +360,7 @@ func _on_TimerDownNow_timeout():
 	$Control._on_rage_updatted(0, 0)
 	$Control/active.start()
 	pass # Replace with function body.
+
+
+func _on_activeHeal_timeout():
+	healBar_on = false
