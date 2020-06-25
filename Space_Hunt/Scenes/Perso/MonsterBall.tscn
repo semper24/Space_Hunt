@@ -123,15 +123,15 @@ region = Rect2( 1056, 0, 96, 96 )
 
 [sub_resource type="SpriteFrames" id=13]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
-"loop": false,
-"name": "die",
-"speed": 8.0
-}, {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 19 ), ExtResource( 28 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 23 ), ExtResource( 17 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 15 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 16 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 13 ), ExtResource( 21 ), ExtResource( 31 ), ExtResource( 22 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": false,
+"name": "die",
+"speed": 8.0
 }, {
 "frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 59 ), ExtResource( 39 ), ExtResource( 60 ), ExtResource( 40 ), ExtResource( 61 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 67 ), ExtResource( 65 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 68 ), ExtResource( 49 ), ExtResource( 66 ), ExtResource( 72 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 71 ), ExtResource( 50 ), ExtResource( 51 ) ],
 "loop": true,
@@ -157,10 +157,11 @@ bullet_spawn_path = NodePath("bullet_spawn")
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 16
+frame = 22
 playing = true
 
 [node name="bullet_spawn" type="Position2D" parent="."]
+visible = false
 position = Vector2( -240, 0 )
 
 [node name="Timer" type="Timer" parent="."]
@@ -168,6 +169,7 @@ wait_time = 1.5
 one_shot = true
 
 [node name="collision" type="CollisionPolygon2D" parent="."]
+visible = false
 position = Vector2( -154, -54 )
 polygon = PoolVector2Array( 12, -10, 44, -58, 92, -74, 124, -90, 140, -138, 172, -154, 204, -154, 236, -154, 268, -154, 300, -138, 316, -122, 332, -106, 348, -74, 364, -42, 364, -10, 380, 38, 348, 70, 348, 102, 348, 150, 380, 198, 364, 246, 316, 262, 348, 230, 316, 198, 284, 230, 284, 262, 300, 278, 364, 278, 284, 294, 236, 278, 204, 294, 172, 294, 60, 278, 60, 294, 28, 278, -4, 278, -52, 294, -20, 262, -36, 262, -84, 278, -68, 246, -52, 246, -52, 214, -52, 182, -36, 134, -84, 102, -36, 118, -20, 102, -4, 22 )
 
