@@ -225,6 +225,7 @@ func Player_power_down():
 	posTarget = $Position2D
 	$Sprite.play("PowerDown2")
 	$TimerDown.start()
+	JUMP = -470
 	Dead = "Dead"
 	Run = "Run"
 	Idle = "Idle"
@@ -331,7 +332,7 @@ func _on_collisionTimer_timeout():
 	pass # Replace with function body.
 
 func _on_TimerDown_timeout():
-	scale = Vector2(1, 1)
+	scale = Vector2(1.5, 1.5)
 	$HitboxUp.set_deferred("disabled", true)
 	$Hitbox.set_deferred("disabled", false)
 	$Sprite.play("PowerDown")
