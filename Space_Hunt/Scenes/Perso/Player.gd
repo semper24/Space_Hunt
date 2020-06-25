@@ -39,6 +39,8 @@ var healBar_on = false
 var posTarget = null
 var boom = null
 var targetUp = Vector2(-13, 0)
+var Firewin = false
+var Icewin = false
 
 func manageShoot():
 	if fireball_power == 1:
@@ -234,10 +236,15 @@ func _physics_process(delta):#MAIN
 				damage(100)
 			if "bossFire" in get_slide_collision(i).collider.name:
 				damage(100)
+			if "GhostFire" in get_slide_collision(i).collider.name:
+				damage(1)
+			if "IceGhost" in get_slide_collision(i).collider.name:
+				damage(1)
 	var position = get_position()
 	if (position.y > 10000):
 		get_tree().change_scene("res://Scenes/Pages/GameOver.tscn")
 	pass
+
 
 func _on_Timer_timeout():#CHANGE SCENE AFTER DEATH
 	get_tree().change_scene("res://Scenes/Worlds/1-1.tscn")
@@ -327,6 +334,15 @@ func cac_hit():
 	boom.position = $Sprite/Cac/PositionArm.global_position
 	pass
 
+func Fire_win():
+	Firewin = true
+
+func Ice_win():
+	Icewin = true
+
+func set_speed(new):
+	max_speed = new
+
 func _on_Cac_body_entered(body):
 	if "IceWalker" in body.name:
 		cac_hit()
@@ -347,6 +363,12 @@ func _on_Cac_body_entered(body):
 		cac_hit()
 		body.dead(10)
 	if "bossFire" in body.name:
+		cac_hit()
+		body.dead(10)
+	if "GhostFire" in body.name:
+		cac_hit()
+		body.dead(10)
+	if "IceGhost" in body.name:
 		cac_hit()
 		body.dead(10)
 	print(body.name)

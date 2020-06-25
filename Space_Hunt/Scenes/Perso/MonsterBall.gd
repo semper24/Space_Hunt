@@ -6,7 +6,7 @@ const GRAVITY = 10
 export(int) var speed = 30
 const FLOOR = Vector2(0, -1)
 
-export(int) var hp = 5
+export(int) var hp = 25
 
 var velocity = Vector2()
 
@@ -99,4 +99,16 @@ func shoot():
 
 func _on_Timer2_timeout():
 	take_damage = false
+	pass # Replace with function body.
+
+
+func _on_Timer3_timeout():
+	if is_dead == false:
+		var bullet = bullet_scene.instance()
+		bullet.position = $bullet_spawn2.global_position
+		if sign($bullet_spawn2.position.x) == 1:
+			bullet.shoot(directional_force, bullet_gravity, 1)
+		else:
+			bullet.shoot(directional_force, bullet_gravity, -1)
+		get_parent().add_child(bullet)
 	pass # Replace with function body.

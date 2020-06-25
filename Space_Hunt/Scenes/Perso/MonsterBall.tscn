@@ -148,21 +148,20 @@ animations = [ {
 position = Vector2( 232, 104 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 33 )
-__meta__ = {
-"_edit_group_": true
-}
 bullet_scene = ExtResource( 35 )
 bullet_spawn_path = NodePath("bullet_spawn")
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 22
+frame = 21
 playing = true
 
 [node name="bullet_spawn" type="Position2D" parent="."]
-visible = false
-position = Vector2( -240, 0 )
+position = Vector2( -313.046, 160.462 )
+
+[node name="bullet_spawn2" type="Position2D" parent="."]
+position = Vector2( -314.244, 40.7142 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.5
@@ -174,6 +173,11 @@ position = Vector2( -154, -54 )
 polygon = PoolVector2Array( 12, -10, 44, -58, 92, -74, 124, -90, 140, -138, 172, -154, 204, -154, 236, -154, 268, -154, 300, -138, 316, -122, 332, -106, 348, -74, 364, -42, 364, -10, 380, 38, 348, 70, 348, 102, 348, 150, 380, 198, 364, 246, 316, 262, 348, 230, 316, 198, 284, 230, 284, 262, 300, 278, 364, 278, 284, 294, 236, 278, 204, 294, 172, 294, 60, 278, 60, 294, 28, 278, -4, 278, -52, 294, -20, 262, -36, 262, -84, 278, -68, 246, -52, 246, -52, 214, -52, 182, -36, 134, -84, 102, -36, 118, -20, 102, -4, 22 )
 
 [node name="Timer2" type="Timer" parent="."]
-wait_time = 0.9
+wait_time = 0.5
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_Timer3_timeout"]

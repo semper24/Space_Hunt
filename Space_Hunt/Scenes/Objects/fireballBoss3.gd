@@ -3,7 +3,7 @@ extends Area2D
 const SPEED = 150
 var dir = Vector2()
 export(int) var hp = 1
-var attack = 1
+var attack = 5
 
 func _physics_process(delta):
 	$AnimatedSprite.play("fire")

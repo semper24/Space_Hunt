@@ -33,5 +33,5 @@ func _on_VisibilityNotifier2D_screen_exited():
 func _on_Area2D_body_entered(body):
 	$AnimatedSprite.play("die")
 	if "Player" in body.name:
-		body.damage(2)
+		body.damage(4)
 	queue_free()

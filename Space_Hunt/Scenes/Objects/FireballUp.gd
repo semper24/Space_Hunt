@@ -23,17 +23,21 @@ func _on_VisibilityNotifier2D_screen_exited():
 func _on_Area2D_body_entered(body):
 	$AnimatedSprite.play("die")
 	if "IceWalker" in body.name:
-		body.dead(10)
+		body.dead(3)
 	if "Alien" in body.name:
-		body.dead(10)
+		body.dead(3)
 	if "drakeIce" in body.name:
-		body.dead(10)
+		body.dead(3)
 	if "MonsterBall" in body.name:
-		body.dead(10)
+		body.dead(3)
 	if "BossMageFirst" in body.name:
-		body.dead(10)
+		body.dead(3)
 	if "BossMageRes" in body.name:
-		body.dead(10)
+		body.dead(3)
 	if "bossFire" in body.name:
-		body.dead(10)	
+		body.dead(3)
+	if "GhostFire" in body.name:
+		body.dead(3)
+	if "IceGhost" in body.name:
+		body.dead(3)
 	queue_free()

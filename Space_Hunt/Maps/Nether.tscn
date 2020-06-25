@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Scenes/Objects/HealRegen.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/Perso/GhostFire.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scenes/Perso/MonsterBall.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Maps/burn.gd" type="Script" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 59.4082, 75.2954 )
@@ -29,6 +30,9 @@ animations = [ {
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 29.6094, 68.4033 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 15.6611, 14.575 )
 
 [node name="Nether" type="Node2D"]
 script = ExtResource( 12 )
@@ -66,7 +70,7 @@ scale = Vector2( 3.5, 3.5 )
 World = "res://Maps/Vanilla.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 504.001, 904 )
+position = Vector2( 509.169, 884.255 )
 
 [node name="FireS1" type="Position2D" parent="."]
 position = Vector2( 16735.6, 206.567 )
@@ -95,7 +99,6 @@ position = Vector2( 17690.7, 991.36 )
 position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
@@ -118,7 +121,6 @@ tile_data = PoolIntArray( -851725, 6, 0, -851724, 6, 0, -851723, 6, 0, -851722, 
 [node name="bossFire" parent="." instance=ExtResource( 5 )]
 position = Vector2( 17463, 760 )
 script = ExtResource( 7 )
-hp = 100
 
 [node name="TimerFire1" type="Timer" parent="bossFire"]
 wait_time = 3.0
@@ -256,6 +258,204 @@ hp = 20
 
 [node name="MonsterBall" parent="mobs" instance=ExtResource( 15 )]
 position = Vector2( 7512, -120 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 3.17773, -16.2858 )
+shape = SubResource( 4 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 592.826, -46.1228 )
+shape = SubResource( 4 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( 645.458, -1.91223 )
+shape = SubResource( 4 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( 642.3, 337.088 )
+shape = SubResource( 4 )
+
+[node name="Area2D22" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D22"]
+position = Vector2( 656.3, 336.088 )
+shape = SubResource( 4 )
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2( 691.854, 367.97 )
+shape = SubResource( 4 )
+
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2( 1073.7, 626.247 )
+shape = SubResource( 4 )
+
+[node name="Area2D7" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
+position = Vector2( 2195.03, 721.884 )
+shape = SubResource( 4 )
+
+[node name="Area2D8" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
+position = Vector2( 978.666, -46.626 )
+shape = SubResource( 4 )
+
+[node name="Area2D9" type="Area2D" parent="."]
+position = Vector2( 3292.71, 859.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
+position = Vector2( 819.53, -47.1393 )
+shape = SubResource( 4 )
+
+[node name="Area2D10" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
+position = Vector2( 1395.71, -194.1 )
+shape = SubResource( 4 )
+
+[node name="Area2D11" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
+position = Vector2( 2196.5, -227.794 )
+shape = SubResource( 4 )
+
+[node name="Area2D12" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
+position = Vector2( 2291.68, -165.117 )
+shape = SubResource( 4 )
+
+[node name="Area2D13" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
+position = Vector2( 2386.08, -99.0245 )
+shape = SubResource( 4 )
+
+[node name="Area2D14" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14"]
+position = Vector2( 2451.07, -35.8007 )
+shape = SubResource( 4 )
+
+[node name="Area2D15" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15"]
+position = Vector2( 3026.86, 60.0414 )
+shape = SubResource( 4 )
+
+[node name="Area2D16" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D16"]
+position = Vector2( 3219.86, -131.959 )
+shape = SubResource( 4 )
+
+[node name="Area2D18" type="Area2D" parent="."]
+position = Vector2( 3292.71, 848.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D18"]
+position = Vector2( 3379.03, -259.473 )
+shape = SubResource( 4 )
+
+[node name="Area2D17" type="Area2D" parent="."]
+position = Vector2( 3292.71, 844.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D17"]
+position = Vector2( 3027.05, 284.397 )
+shape = SubResource( 4 )
+
+[node name="Area2D19" type="Area2D" parent="."]
+position = Vector2( 3292.71, 844.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D19"]
+position = Vector2( 2643.63, -703.808 )
+shape = SubResource( 4 )
+
+[node name="Area2D20" type="Area2D" parent="."]
+position = Vector2( 3292.71, 844.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D20"]
+position = Vector2( 2964.17, -832.302 )
+shape = SubResource( 4 )
+
+[node name="Area2D21" type="Area2D" parent="."]
+position = Vector2( 3290.71, 844.798 )
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D21"]
+position = Vector2( 3381.59, -832.015 )
+shape = SubResource( 4 )
 [connection signal="timeout" from="bossFire/TimerFire1" to="bossFire" method="_on_TimerFire1_timeout"]
 [connection signal="timeout" from="bossFire/TimerFire2" to="bossFire" method="_on_TimerFire2_timeout"]
 [connection signal="timeout" from="bossFire/TimerFire3" to="bossFire" method="_on_TimerFire3_timeout"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D22" to="Area2D22" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D5" to="Area2D5" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D7" to="Area2D7" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D8" to="Area2D8" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D9" to="Area2D9" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D10" to="Area2D10" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D12" to="Area2D12" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D13" to="Area2D13" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D14" to="Area2D14" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D15" to="Area2D15" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D16" to="Area2D16" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D18" to="Area2D18" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D17" to="Area2D17" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D19" to="Area2D19" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D20" to="Area2D20" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D21" to="Area2D21" method="_on_Area2D_body_entered"]

@@ -6,10 +6,11 @@ var direction = Vector2()
 var angle = 0.0
 var is_dead = false
 var bullet = preload("res://Scenes/Objects/firebalmageRes.tscn")
+var potion = preload("res://Scenes/Objects/PotionIce.tscn")
 export var offset = 25
 var status = false
 var next = true
-var hp = 3
+var hp = 100
 
 func _ready():
 	pass
@@ -75,6 +76,9 @@ func _get_dir(target):
 
 
 func _on_Timer_timeout():
+	var popo = potion.instance()
+	get_parent().add_child(popo)
+	popo.position = position
 	queue_free()
 	get_parent().get_node("ScreenShake").screen_shake(1, 10, 100)
 

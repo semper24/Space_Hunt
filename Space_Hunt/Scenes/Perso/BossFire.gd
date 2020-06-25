@@ -10,10 +10,11 @@ var Fire2
 var bullet = preload("res://Scenes/Objects/fireballBoss.tscn")
 var bullet1 = preload("res://Scenes/Objects/fireballBoss2.tscn")
 var bullet2 = preload("res://Scenes/Objects/fireballBoss3.tscn")
+var potion = preload("res://Scenes/Objects/Potion.tscn")
 var block
 var noc
 export var offset = 20
-export(int) var hp = 2
+export(int) var hp = 1
 
 func _ready():
 	if is_dead == false:
@@ -31,6 +32,9 @@ func dead(damage):
 	hp -= damage
 	if hp <= 0:
 		is_dead = true
+		var popo = potion.instance()
+		get_parent().add_child(popo)
+		popo.position = position
 		queue_free()
 		block.queue_free()
 		noc.queue_free()
