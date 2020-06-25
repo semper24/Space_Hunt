@@ -80,7 +80,7 @@ position = Vector2( 17036.5, 201.784 )
 position = Vector2( 17041.3, 1072.35 )
 
 [node name="finish" type="StaticBody2D" parent="."]
-position = Vector2( 17723.4, 1003.24 )
+position = Vector2( 17743.4, 986.056 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="finish"]
 position = Vector2( -293.227, -4.10107 )
@@ -90,13 +90,13 @@ shape = SubResource( 1 )
 position = Vector2( 17690.7, 991.36 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="nocturne"]
-position = Vector2( -33.8525, 29.8069 )
+position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
-position = Vector2( -27.4473, 31.6929 )
+position = Vector2( -30.7871, 1.62961 )
 shape = SubResource( 3 )
 
 [node name="Map" type="TileMap" parent="."]
