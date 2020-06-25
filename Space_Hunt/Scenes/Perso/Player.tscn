@@ -55,149 +55,149 @@ radius = 7.0
 height = 11.0
 
 [sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 240, 120, 80, 120 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 600, 160, 120 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 120, 80, 120 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 480, 80, 120 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 480, 0, 80, 120 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 560, 0, 80, 120 )
+
+[sub_resource type="AtlasTexture" id=8]
 flags = 4
 atlas = ExtResource( 47 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=9]
 flags = 4
 atlas = ExtResource( 49 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 48 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=11]
 flags = 4
 atlas = ExtResource( 45 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=12]
 flags = 4
 atlas = ExtResource( 44 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="StreamTexture" id=7]
-load_path = "res://.import/Idle10.png-964d54e58241b8bd14b99c87b914845d.stex"
-
-[sub_resource type="StreamTexture" id=8]
-load_path = "res://.import/Idle9.png-756ffd5f4dc0779db7442c753b762b4d.stex"
-
-[sub_resource type="StreamTexture" id=9]
-load_path = "res://.import/Idle8.png-85b0392b67b035049ca0f2fec41de009.stex"
-
-[sub_resource type="StreamTexture" id=10]
-load_path = "res://.import/Idle7.png-0edb29c5051a560e2bcadaacfd2647aa.stex"
-
-[sub_resource type="StreamTexture" id=11]
-load_path = "res://.import/Idle6.png-b6c52174ad24d62fb376b79d257028a4.stex"
-
-[sub_resource type="StreamTexture" id=12]
-load_path = "res://.import/Idle4.png-417c0fa9c1ba112d0d064a506758b478.stex"
-
-[sub_resource type="StreamTexture" id=13]
-load_path = "res://.import/Idle5.png-6c13f3ccb787f56a932c1a351d2e1233.stex"
-
-[sub_resource type="StreamTexture" id=14]
-load_path = "res://.import/Idle1.png-24ae8a8aea8dfa0c5c78c6bf15e681b1.stex"
-
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=13]
 flags = 4
 atlas = ExtResource( 33 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=14]
 flags = 4
 atlas = ExtResource( 34 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=15]
 flags = 4
 atlas = ExtResource( 28 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=16]
 flags = 4
 atlas = ExtResource( 35 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 30 )
 region = Rect2( 160, 480, 80, 120 )
 
-[sub_resource type="AtlasTexture" id=20]
+[sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 1 )
 region = Rect2( 480, 600, 160, 120 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 1 )
 region = Rect2( 640, 0, 160, 120 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 1 )
 region = Rect2( 800, 0, 160, 120 )
 
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 1 )
 region = Rect2( 320, 600, 160, 120 )
 
-[sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 1 )
-region = Rect2( 160, 120, 80, 120 )
+[sub_resource type="StreamTexture" id=22]
+load_path = "res://.import/Idle10.png-964d54e58241b8bd14b99c87b914845d.stex"
 
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 1 )
-region = Rect2( 240, 120, 80, 120 )
+[sub_resource type="StreamTexture" id=23]
+load_path = "res://.import/Idle9.png-756ffd5f4dc0779db7442c753b762b4d.stex"
 
-[sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 1 )
-region = Rect2( 160, 600, 160, 120 )
+[sub_resource type="StreamTexture" id=24]
+load_path = "res://.import/Idle8.png-85b0392b67b035049ca0f2fec41de009.stex"
 
-[sub_resource type="AtlasTexture" id=27]
-atlas = ExtResource( 1 )
-region = Rect2( 160, 480, 80, 120 )
+[sub_resource type="StreamTexture" id=25]
+load_path = "res://.import/Idle7.png-0edb29c5051a560e2bcadaacfd2647aa.stex"
 
-[sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 1 )
-region = Rect2( 480, 0, 80, 120 )
+[sub_resource type="StreamTexture" id=26]
+load_path = "res://.import/Idle6.png-b6c52174ad24d62fb376b79d257028a4.stex"
 
-[sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 1 )
-region = Rect2( 560, 0, 80, 120 )
+[sub_resource type="StreamTexture" id=27]
+load_path = "res://.import/Idle4.png-417c0fa9c1ba112d0d064a506758b478.stex"
+
+[sub_resource type="StreamTexture" id=28]
+load_path = "res://.import/Idle5.png-6c13f3ccb787f56a932c1a351d2e1233.stex"
+
+[sub_resource type="StreamTexture" id=29]
+load_path = "res://.import/Idle1.png-24ae8a8aea8dfa0c5c78c6bf15e681b1.stex"
 
 [sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "Die",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
 "loop": true,
 "name": "PowerDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Run_Up",
-"speed": 13.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "Run and Shoot Up",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "Idle and Shoot Up",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
-"loop": true,
-"name": "Idle_Up",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "Fall Up",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 38 ), ExtResource( 43 ), ExtResource( 37 ), ExtResource( 39 ) ],
@@ -205,12 +205,12 @@ animations = [ {
 "name": "cac",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
 "loop": false,
 "name": "Spawn0",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 20 ) ],
+"frames": [ SubResource( 18 ) ],
 "loop": true,
 "name": "Jump and Shoot",
 "speed": 5.0
@@ -220,12 +220,12 @@ animations = [ {
 "name": "PowerDown2",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 21 ), SubResource( 22 ) ],
+"frames": [ SubResource( 19 ), SubResource( 20 ) ],
 "loop": true,
 "name": "Run and Shoot",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 23 ) ],
+"frames": [ SubResource( 21 ) ],
 "loop": true,
 "name": "Idle and Shoot",
 "speed": 5.0
@@ -240,34 +240,34 @@ animations = [ {
 "name": "Spawn",
 "speed": 7.0
 }, {
+"frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Run_Up",
+"speed": 13.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Idle and Shoot Up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Run and Shoot Up",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "Idle_Up",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "Fall Up",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "Die Up",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 24 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 25 ) ],
-"loop": true,
-"name": "Fall",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 26 ) ],
-"loop": true,
-"name": "Die",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 27 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 28 ), SubResource( 29 ) ],
-"loop": true,
-"name": "Run",
 "speed": 5.0
 } ]
 
@@ -323,6 +323,7 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 limit_smoothed = true
 smoothing_enabled = true
+smoothing_speed = 10.0
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( -44.9356, 0.142399 )

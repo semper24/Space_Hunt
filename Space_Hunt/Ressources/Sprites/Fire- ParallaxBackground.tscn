@@ -1,15 +1,14 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Ressources/Sprites/Parallax/ice.png" type="Texture" id=1]
+[ext_resource path="res://Ressources/Sprites/Parallax/hellParf2.png" type="Texture" id=1]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.1, 0.1 )
-motion_mirroring = Vector2( 1220, 500 )
 
 [node name="Background 2" type="Sprite" parent="ParallaxLayer"]
-position = Vector2( -382.831, -274.488 )
-scale = Vector2( 0.852512, 0.689453 )
+position = Vector2( -916.892, -249.836 )
+scale = Vector2( 4.52945, 3.10035 )
 texture = ExtResource( 1 )
 centered = false

@@ -1,15 +1,14 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Ressources/Sprites/Parallax/ice.png" type="Texture" id=1]
+[ext_resource path="res://Ressources/Sprites/Parallax/PC Computer - Planet Centauri - Aridplain.png" type="Texture" id=1]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.1, 0.1 )
-motion_mirroring = Vector2( 1220, 500 )
 
 [node name="Background 2" type="Sprite" parent="ParallaxLayer"]
-position = Vector2( -382.831, -274.488 )
-scale = Vector2( 0.852512, 0.689453 )
+position = Vector2( -696.276, -293.32 )
+scale = Vector2( 2.44221, 1.88736 )
 texture = ExtResource( 1 )
 centered = false
