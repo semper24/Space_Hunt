@@ -24,6 +24,11 @@ region = Rect2( 41, 228, 41, 38 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "fire2",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 2 ) ],
 "loop": true,
 "name": "die",
@@ -32,11 +37,6 @@ animations = [ {
 "frames": [ SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "fire",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "fire2",
 "speed": 5.0
 } ]
 
@@ -55,7 +55,7 @@ position = Vector2( 1.20371e-35, -4.76837e-07 )
 scale = Vector2( 0.170625, 0.15375 )
 frames = SubResource( 5 )
 animation = "fire2"
-frame = 2
+frame = 1
 playing = true
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

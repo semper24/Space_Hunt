@@ -5,6 +5,7 @@ export(int) var speed = 30
 const FLOOR = Vector2(0, -1)
 
 export(int) var hp = 1
+export(int) var dmg = 10
 export(String) var type = ""
 
 var velocity = Vector2()

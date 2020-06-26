@@ -225,6 +225,8 @@ func manageCac():
 				$Sprite.play("cac")
 
 func _physics_process(delta):#MAIN
+	if Firewin == true && Icewin == true:
+		get_tree().change_scene("res://Scenes/Pages/EndWin.tscn")
 	posTarget = $Position2D
 	if Up == true:
 		return
