@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
@@ -16,7 +16,8 @@
 [ext_resource path="res://Scenes/Perso/GhostFire.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scenes/Perso/MonsterBall.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Maps/burn.gd" type="Script" id=16]
-[ext_resource path="res://Scenes/Perso/ballFire.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Perso/FireWalker.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Objects/ScreenShake.tscn" type="PackedScene" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 59.4082, 75.2954 )
@@ -71,7 +72,7 @@ scale = Vector2( 3.5, 3.5 )
 World = "res://Maps/Vanilla.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 509.169, 884.255 )
+position = Vector2( 8093.66, -112.965 )
 
 [node name="FireS1" type="Position2D" parent="."]
 position = Vector2( 16735.6, 206.567 )
@@ -100,7 +101,6 @@ position = Vector2( 17690.7, 991.36 )
 position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
@@ -147,7 +147,7 @@ type = "Fire"
 
 [node name="GhostFire2" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 2072, 1304 )
-scale = Vector2( 1, 1 )
+scale = Vector2( 1.5, 1.5 )
 hp = 10
 type = "Fire"
 
@@ -205,12 +205,6 @@ scale = Vector2( 1, 1 )
 hp = 15
 type = "Fire"
 
-[node name="GhostFire12" parent="mobs" instance=ExtResource( 14 )]
-position = Vector2( 8720, -80 )
-scale = Vector2( 1, 1 )
-speed = 70
-hp = 15
-
 [node name="GhostFire13" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 9760, -72 )
 scale = Vector2( 1, 1 )
@@ -228,7 +222,7 @@ type = "Fire"
 [node name="GhostFire15" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 11272, 208 )
 scale = Vector2( 1, 1 )
-speed = 70
+speed = 150
 hp = 15
 type = "Fire"
 
@@ -270,8 +264,16 @@ type = "Fire"
 [node name="MonsterBall" parent="mobs" instance=ExtResource( 15 )]
 position = Vector2( 7512, -120 )
 
-[node name="Alien2" parent="mobs" instance=ExtResource( 17 )]
-position = Vector2( 667.36, 982.832 )
+[node name="ScreenShake" parent="." instance=ExtResource( 18 )]
+
+[node name="IceWalker2" parent="." instance=ExtResource( 17 )]
+position = Vector2( 13729.3, 451.368 )
+hp = 15
+
+[node name="IceWalker" parent="." instance=ExtResource( 17 )]
+position = Vector2( 8778.94, -123.384 )
+speed = 80
+hp = 15
 
 [node name="Items" type="Node2D" parent="."]
 

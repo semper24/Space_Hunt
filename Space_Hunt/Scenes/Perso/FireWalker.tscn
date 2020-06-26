@@ -1,0 +1,72 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Ressources/Sprites/Golem/PC Computer - Koumajou Densetsu II Strangers Requiem - Red Golem.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Perso/IceWalker.gd" type="Script" id=42]
+[ext_resource path="res://Ressources/Sprites/explo/tile017.png" type="Texture" id=43]
+[ext_resource path="res://Ressources/Sprites/explo/tile016.png" type="Texture" id=44]
+[ext_resource path="res://Ressources/Sprites/explo/tile015.png" type="Texture" id=45]
+[ext_resource path="res://Ressources/Sprites/explo/tile012.png" type="Texture" id=46]
+[ext_resource path="res://Ressources/Sprites/explo/tile008.png" type="Texture" id=47]
+[ext_resource path="res://Ressources/Sprites/explo/tile013.png" type="Texture" id=48]
+[ext_resource path="res://Ressources/Sprites/explo/tile009.png" type="Texture" id=49]
+[ext_resource path="res://Ressources/Sprites/explo/tile014.png" type="Texture" id=50]
+[ext_resource path="res://Ressources/Sprites/explo/tile010.png" type="Texture" id=51]
+[ext_resource path="res://Ressources/Sprites/explo/tile007.png" type="Texture" id=52]
+[ext_resource path="res://Ressources/Sprites/explo/tile011.png" type="Texture" id=53]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 256, 256, 128 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 256, 256, 256, 128 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 512, 256, 256, 128 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 768, 256, 256, 128 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 52 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 53 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "die",
+"speed": 15.0
+}, {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 48.0
+height = 96.0
+
+[node name="IceWalker" type="KinematicBody2D"]
+script = ExtResource( 42 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 12.651, -25.7012 )
+scale = Vector2( 1.66043, 1.95907 )
+frames = SubResource( 5 )
+animation = "run"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.513336, 0 )
+shape = SubResource( 6 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 32, -8 )
+scale = Vector2( 5, 1 )
+enabled = true
+cast_to = Vector2( 0, 105 )
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
