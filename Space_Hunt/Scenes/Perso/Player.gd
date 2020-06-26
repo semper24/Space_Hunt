@@ -43,6 +43,10 @@ var Firewin = false
 var Icewin = false
 
 func manageShoot():
+	var player = AudioStreamPlayer.new()
+	self.add_child(player)
+	player.stream = load("res://Ressources/Sounds/laser-gun-sound-effect.ogg")
+	player.play()
 	if fireball_power == 1:
 		fireball = FIREBALL.instance()
 	elif fireball_power == 2:
