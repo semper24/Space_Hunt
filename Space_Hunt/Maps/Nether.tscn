@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://TilesSets/blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Perso/Player.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Scenes/Perso/GhostFire.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scenes/Perso/MonsterBall.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Maps/burn.gd" type="Script" id=16]
+[ext_resource path="res://Scenes/Perso/ballFire.tscn" type="PackedScene" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 59.4082, 75.2954 )
@@ -99,6 +100,7 @@ position = Vector2( 17690.7, 991.36 )
 position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
@@ -267,6 +269,9 @@ type = "Fire"
 
 [node name="MonsterBall" parent="mobs" instance=ExtResource( 15 )]
 position = Vector2( 7512, -120 )
+
+[node name="Alien2" parent="mobs" instance=ExtResource( 17 )]
+position = Vector2( 667.36, 982.832 )
 
 [node name="Items" type="Node2D" parent="."]
 
