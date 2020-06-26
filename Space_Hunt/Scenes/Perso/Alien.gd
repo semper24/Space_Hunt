@@ -5,6 +5,7 @@ export(int) var speed = 30
 const FLOOR = Vector2(0, -1)
 
 export(int) var hp = 1
+export(String) var type = ""
 
 var velocity = Vector2()
 
@@ -38,6 +39,10 @@ func _physics_process(delta):
 		for i in range(get_slide_count()):
 			if "Player" in get_slide_collision(i).collider.name:
 				get_slide_collision(i).collider.damage(1)
+				if "Ice" == type:
+					get_slide_collision(i).collider.slow()
+				elif "Fire" == type:
+					get_slide_collision(i).collider.explod()
 
 	if is_on_wall():
 		direction = direction * -1

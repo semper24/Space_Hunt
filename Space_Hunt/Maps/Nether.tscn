@@ -99,6 +99,7 @@ position = Vector2( 17690.7, 991.36 )
 position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
@@ -151,56 +152,67 @@ position = Vector2( 16352, 1040 )
 position = Vector2( 1248, 888 )
 scale = Vector2( 1, 1 )
 hp = 10
+type = "Fire"
 
 [node name="GhostFire2" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 2072, 1304 )
 scale = Vector2( 1, 1 )
 hp = 10
+type = "Fire"
 
 [node name="GhostFire3" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 4096, 704 )
 scale = Vector2( 1, 1 )
 hp = 10
+type = "Fire"
 
 [node name="GhostFire4" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 5048, 504 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire5" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 4512, 1384 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire6" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 5192, 1520 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire7" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 6392, 1520 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire8" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 6216, 1528 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire9" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 7384, 568 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire10" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 7120, 464 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire11" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 6264, -80 )
 scale = Vector2( 1, 1 )
 hp = 15
+type = "Fire"
 
 [node name="GhostFire12" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 8720, -80 )
@@ -213,48 +225,56 @@ position = Vector2( 9760, -72 )
 scale = Vector2( 1, 1 )
 speed = 70
 hp = 15
+type = "Fire"
 
 [node name="GhostFire14" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 10504, 216 )
 scale = Vector2( 1, 1 )
 speed = 70
 hp = 15
+type = "Fire"
 
 [node name="GhostFire15" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 11272, 216 )
 scale = Vector2( 1, 1 )
 speed = 70
 hp = 15
+type = "Fire"
 
 [node name="GhostFire16" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 12088, 208 )
 scale = Vector2( 1, 1 )
 speed = 70
 hp = 15
+type = "Fire"
 
 [node name="GhostFire19" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 13992, 504 )
 scale = Vector2( 1, 1 )
 speed = 150
 hp = 20
+type = "Fire"
 
 [node name="GhostFire21" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 13416, 496 )
 scale = Vector2( 1, 1 )
 speed = 150
 hp = 20
+type = "Fire"
 
 [node name="GhostFire22" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 12736, 504 )
 scale = Vector2( 1, 1 )
 speed = 150
 hp = 20
+type = "Fire"
 
 [node name="GhostFire20" parent="mobs" instance=ExtResource( 14 )]
 position = Vector2( 14488, 496 )
 scale = Vector2( 1, 1 )
 speed = 150
 hp = 20
+type = "Fire"
 
 [node name="MonsterBall" parent="mobs" instance=ExtResource( 15 )]
 position = Vector2( 7512, -120 )

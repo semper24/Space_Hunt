@@ -22,6 +22,7 @@ var buffer = ""
 const FIREBALL = preload("res://Scenes/Objects/shoot.tscn")
 const FIREBALLUP = preload("res://Scenes/Objects/FireballUp.tscn")
 const BOOM = preload("res://Scenes/Objects/AnimeCac.tscn")
+const Exploded = preload("res://Scenes/Objects/Animeexplo.tscn")
 var fireball_power = 1
 var speed_up = 0
 var Dead = "Dead"
@@ -42,6 +43,7 @@ var boom = null
 var targetUp = Vector2(-13, 0)
 var Firewin = false
 var Icewin = false
+var Fired = false
 
 func manageShoot():
 	var player = AudioStreamPlayer.new()
@@ -84,6 +86,10 @@ func _on_heal_perso(heal):
 	healBar_on = true
 	$HealBar/activeHeal.start()
 	hp = $HealBar._on_heal_Plus(heal)
+
+func slow():
+	max_speed = 200
+	$slowTime.start()
 
 func manageRun():#RUN
 	_rage_bar_vis()
@@ -250,6 +256,14 @@ func _physics_process(delta):#MAIN
 		get_tree().change_scene("res://Scenes/Pages/GameOver.tscn")
 	pass
 
+func explod():
+	if Fired == false:
+		$FireTime.start()
+		Fired = true
+		var ex = Exploded.instance()
+		get_parent().add_child(ex)
+		ex.position = position
+		ex.end()
 
 func _on_Timer_timeout():#CHANGE SCENE AFTER DEATH
 	get_tree().change_scene("res://Scenes/Worlds/1-1.tscn")
@@ -414,3 +428,13 @@ func _on_TimerDownNow_timeout():
 
 func _on_activeHeal_timeout():
 	healBar_on = false
+
+
+func _on_slowTime_timeout():
+	max_speed = 400
+	pass # Replace with function body.
+
+
+func _on_FireTime_timeout():
+	Fired = false
+	pass # Replace with function body.
