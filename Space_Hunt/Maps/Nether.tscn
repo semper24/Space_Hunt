@@ -99,6 +99,7 @@ position = Vector2( 17690.7, 991.36 )
 position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
@@ -303,7 +304,7 @@ position = Vector2( 16352, 1040 )
 [node name="Magma" type="Node2D" parent="."]
 
 [node name="MagmaBloc" type="Area2D" parent="Magma"]
-position = Vector2( 3568, 912 )
+position = Vector2( 3568, 910 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -313,7 +314,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc51" type="Area2D" parent="Magma"]
-position = Vector2( 3664, 784 )
+position = Vector2( 3664, 781 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -323,7 +324,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc52" type="Area2D" parent="Magma"]
-position = Vector2( 3696, 784 )
+position = Vector2( 3696, 781 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -333,7 +334,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc53" type="Area2D" parent="Magma"]
-position = Vector2( 3728, 816 )
+position = Vector2( 3728, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -343,7 +344,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc54" type="Area2D" parent="Magma"]
-position = Vector2( 3760, 816 )
+position = Vector2( 3760, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -353,7 +354,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc55" type="Area2D" parent="Magma"]
-position = Vector2( 3792, 816 )
+position = Vector2( 3792, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -363,7 +364,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc56" type="Area2D" parent="Magma"]
-position = Vector2( 3824, 816 )
+position = Vector2( 3824, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -373,7 +374,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc57" type="Area2D" parent="Magma"]
-position = Vector2( 3856, 816 )
+position = Vector2( 3856, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -383,7 +384,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc58" type="Area2D" parent="Magma"]
-position = Vector2( 3920, 816 )
+position = Vector2( 3920, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -393,7 +394,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc59" type="Area2D" parent="Magma"]
-position = Vector2( 3952, 816 )
+position = Vector2( 3952, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -403,7 +404,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc60" type="Area2D" parent="Magma"]
-position = Vector2( 3984, 816 )
+position = Vector2( 3984, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -413,7 +414,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc61" type="Area2D" parent="Magma"]
-position = Vector2( 4016, 816 )
+position = Vector2( 4016, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -423,7 +424,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc62" type="Area2D" parent="Magma"]
-position = Vector2( 4048, 816 )
+position = Vector2( 4048, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -433,7 +434,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc63" type="Area2D" parent="Magma"]
-position = Vector2( 4080, 816 )
+position = Vector2( 4080, 813 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -463,7 +464,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc2" type="Area2D" parent="Magma"]
-position = Vector2( 3536, 880 )
+position = Vector2( 3536, 878 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -473,7 +474,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc3" type="Area2D" parent="Magma"]
-position = Vector2( 3504, 880 )
+position = Vector2( 3504, 878 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -483,7 +484,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc4" type="Area2D" parent="Magma"]
-position = Vector2( 3472, 880 )
+position = Vector2( 3472, 878 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -493,7 +494,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc5" type="Area2D" parent="Magma"]
-position = Vector2( 3440, 848 )
+position = Vector2( 3440, 846 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -503,7 +504,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc6" type="Area2D" parent="Magma"]
-position = Vector2( 3408, 848 )
+position = Vector2( 3408, 846 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -513,7 +514,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc7" type="Area2D" parent="Magma"]
-position = Vector2( 3344, 848 )
+position = Vector2( 3344, 846 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -523,7 +524,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc8" type="Area2D" parent="Magma"]
-position = Vector2( 3312, 848 )
+position = Vector2( 3312, 846 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -533,7 +534,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc9" type="Area2D" parent="Magma"]
-position = Vector2( 3280, 848 )
+position = Vector2( 3280, 846 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -543,7 +544,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc10" type="Area2D" parent="Magma"]
-position = Vector2( 3248, 848 )
+position = Vector2( 3248, 846 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -553,7 +554,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc11" type="Area2D" parent="Magma"]
-position = Vector2( 3216, 880 )
+position = Vector2( 3216, 878 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -563,7 +564,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc12" type="Area2D" parent="Magma"]
-position = Vector2( 3184, 880 )
+position = Vector2( 3184, 878 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -573,7 +574,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc13" type="Area2D" parent="Magma"]
-position = Vector2( 3120, 944 )
+position = Vector2( 3120, 942 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -583,7 +584,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc14" type="Area2D" parent="Magma"]
-position = Vector2( 3088, 944 )
+position = Vector2( 3088, 942 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -593,7 +594,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc15" type="Area2D" parent="Magma"]
-position = Vector2( 3056, 976 )
+position = Vector2( 3056, 974 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -603,7 +604,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc16" type="Area2D" parent="Magma"]
-position = Vector2( 3024, 1008 )
+position = Vector2( 3024, 1006 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -613,7 +614,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc17" type="Area2D" parent="Magma"]
-position = Vector2( 2992, 1072 )
+position = Vector2( 2992, 1070 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -623,7 +624,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc18" type="Area2D" parent="Magma"]
-position = Vector2( 2960, 1072 )
+position = Vector2( 2960, 1070 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -633,7 +634,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc19" type="Area2D" parent="Magma"]
-position = Vector2( 2928, 1104 )
+position = Vector2( 2928, 1102 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -643,7 +644,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc20" type="Area2D" parent="Magma"]
-position = Vector2( 2832, 1136 )
+position = Vector2( 2832, 1134 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -653,7 +654,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc21" type="Area2D" parent="Magma"]
-position = Vector2( 2800, 1168 )
+position = Vector2( 2800, 1166 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -663,7 +664,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc22" type="Area2D" parent="Magma"]
-position = Vector2( 2768, 1168 )
+position = Vector2( 2768, 1166 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -673,7 +674,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc23" type="Area2D" parent="Magma"]
-position = Vector2( 2672, 1232 )
+position = Vector2( 2672, 1230 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -683,7 +684,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc24" type="Area2D" parent="Magma"]
-position = Vector2( 2640, 1232 )
+position = Vector2( 2640, 1230 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -693,7 +694,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc25" type="Area2D" parent="Magma"]
-position = Vector2( 2608, 1232 )
+position = Vector2( 2608, 1230 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -703,7 +704,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc26" type="Area2D" parent="Magma"]
-position = Vector2( 2576, 1232 )
+position = Vector2( 2576, 1230 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -713,7 +714,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc27" type="Area2D" parent="Magma"]
-position = Vector2( 2512, 1296 )
+position = Vector2( 2512, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -723,7 +724,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc28" type="Area2D" parent="Magma"]
-position = Vector2( 2480, 1296 )
+position = Vector2( 2480, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -733,7 +734,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc29" type="Area2D" parent="Magma"]
-position = Vector2( 2448, 1296 )
+position = Vector2( 2448, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -743,7 +744,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc30" type="Area2D" parent="Magma"]
-position = Vector2( 2416, 1296 )
+position = Vector2( 2416, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -753,7 +754,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc31" type="Area2D" parent="Magma"]
-position = Vector2( 2384, 1296 )
+position = Vector2( 2384, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -763,7 +764,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc32" type="Area2D" parent="Magma"]
-position = Vector2( 2352, 1296 )
+position = Vector2( 2352, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -773,7 +774,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc34" type="Area2D" parent="Magma"]
-position = Vector2( 2320, 1328 )
+position = Vector2( 2320, 1326 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -783,7 +784,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc35" type="Area2D" parent="Magma"]
-position = Vector2( 2288, 1360 )
+position = Vector2( 2288, 1358 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -793,7 +794,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc36" type="Area2D" parent="Magma"]
-position = Vector2( 2192, 1392 )
+position = Vector2( 2192, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -803,7 +804,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc37" type="Area2D" parent="Magma"]
-position = Vector2( 2160, 1392 )
+position = Vector2( 2160, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -813,7 +814,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc38" type="Area2D" parent="Magma"]
-position = Vector2( 2128, 1392 )
+position = Vector2( 2128, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -823,7 +824,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc39" type="Area2D" parent="Magma"]
-position = Vector2( 2096, 1392 )
+position = Vector2( 2096, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -833,7 +834,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc40" type="Area2D" parent="Magma"]
-position = Vector2( 2064, 1392 )
+position = Vector2( 2064, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -843,7 +844,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc41" type="Area2D" parent="Magma"]
-position = Vector2( 2032, 1392 )
+position = Vector2( 2032, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -853,7 +854,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc42" type="Area2D" parent="Magma"]
-position = Vector2( 2000, 1392 )
+position = Vector2( 2000, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -863,7 +864,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc43" type="Area2D" parent="Magma"]
-position = Vector2( 1968, 1392 )
+position = Vector2( 1968, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -873,7 +874,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc44" type="Area2D" parent="Magma"]
-position = Vector2( 1936, 1392 )
+position = Vector2( 1936, 1390 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -883,7 +884,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc45" type="Area2D" parent="Magma"]
-position = Vector2( 1776, 1296 )
+position = Vector2( 1776, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -893,7 +894,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc46" type="Area2D" parent="Magma"]
-position = Vector2( 1744, 1296 )
+position = Vector2( 1744, 1294 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -903,7 +904,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc47" type="Area2D" parent="Magma"]
-position = Vector2( 1712, 1232 )
+position = Vector2( 1712, 1230 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -913,7 +914,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc48" type="Area2D" parent="Magma"]
-position = Vector2( 1648, 1168 )
+position = Vector2( 1648, 1166 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -933,7 +934,7 @@ shape = SubResource( 4 )
 shape = SubResource( 4 )
 
 [node name="MagmaBloc49" type="Area2D" parent="Magma"]
-position = Vector2( 1616, 1168 )
+position = Vector2( 1616, 1166 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
@@ -943,7 +944,7 @@ __meta__ = {
 shape = SubResource( 4 )
 
 [node name="MagmaBloc50" type="Area2D" parent="Magma"]
-position = Vector2( 1584, 1168 )
+position = Vector2( 1584, 1166 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_group_": true
