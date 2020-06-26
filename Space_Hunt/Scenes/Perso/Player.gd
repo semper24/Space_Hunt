@@ -5,6 +5,7 @@ const GRAVITY = 20
 #RUN
 var max_speed = 400
 const ACCELERATION = 50
+var slide = 0.2
 #JUMP
 var JUMP = -470
 var Jumps = 1#(+1)
@@ -142,7 +143,7 @@ func manageRun():#RUN
 			stack = MAXSTACK
 			buffer = Idle_and_Shoot
 			manageShoot()
-		motion.x = lerp(motion.x, 0, 0.2)
+		motion.x = lerp(motion.x, 0, slide)
 	if (stack != 0):
 		$Sprite.play(buffer)
 		stack -= 1
@@ -346,6 +347,9 @@ func Ice_win():
 
 func set_speed(new):
 	max_speed = new
+
+func set_slide(new):
+	slide = new
 
 func _on_Cac_body_entered(body):
 	if "IceWalker" in body.name:

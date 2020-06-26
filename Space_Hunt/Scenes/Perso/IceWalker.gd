@@ -38,7 +38,7 @@ func _physics_process(delta):
 	if get_slide_count() > 0:
 		for i in range(get_slide_count()):
 			if "Player" in get_slide_collision(i).collider.name:
-				get_slide_collision(i).collider.damage()
+				get_slide_collision(i).collider.damage(3)
 
 	if is_on_wall():
 		direction = direction * -1
