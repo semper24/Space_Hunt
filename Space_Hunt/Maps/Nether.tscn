@@ -72,7 +72,7 @@ scale = Vector2( 3.5, 3.5 )
 World = "res://Maps/Vanilla.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8093.66, -112.965 )
+position = Vector2( 508.854, 887.628 )
 
 [node name="FireS1" type="Position2D" parent="."]
 position = Vector2( 16735.6, 206.567 )
@@ -101,6 +101,7 @@ position = Vector2( 17690.7, 991.36 )
 position = Vector2( -29.5518, 3.54964 )
 scale = Vector2( 1.3234, 1.29474 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nocturne"]
