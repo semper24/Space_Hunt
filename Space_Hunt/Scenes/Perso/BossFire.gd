@@ -54,7 +54,6 @@ func _on_TimerFire1_timeout():
 		b.dir = -dir + Vector2(0, 20)
 		b._setAttack(8)
 
-
 func _on_TimerFire2_timeout():
 	if is_dead == false:
 		dir = _get_dir(FireD2)
