@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Ressources/Sprites/SpaceJam - Main Menu.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/Pages/Menu.gd" type="Script" id=2]
 [ext_resource path="res://Ressources/Sprites/Exit.png" type="Texture" id=3]
 [ext_resource path="res://Ressources/Sprites/Start.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Pages/RichTextLabel2.gd" type="Script" id=5]
-[ext_resource path="res://Scenes/Pages/RichTextLabel.gd" type="Script" id=6]
-[ext_resource path="res://Scenes/Pages/RichTextLabel3.gd" type="Script" id=7]
+[ext_resource path="res://Maps/Press Enter.gd" type="Script" id=6]
 
 [node name="Menu" type="Node"]
 script = ExtResource( 2 )
@@ -105,7 +104,7 @@ percent_visible = 0.0
 text = "
 
 Press Enter to continue."
-script = ExtResource( 7 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

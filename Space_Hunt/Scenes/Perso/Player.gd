@@ -14,6 +14,7 @@ var motion = Vector2()
 #HP
 export(int) var hp = 3
 var is_dead = false
+var can_move = true
 #SHOOT
 const SHOOT = "ui_focus_next"
 var stack = 0
@@ -228,6 +229,8 @@ func ending():
 	get_tree().change_scene("res://Scenes/Pages/EndWin.tscn")
 
 func _physics_process(delta):#MAIN
+	if can_move == false:
+		return
 	posTarget = $Position2D
 	if Up == true:
 		return

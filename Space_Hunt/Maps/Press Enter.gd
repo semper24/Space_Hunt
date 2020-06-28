@@ -9,3 +9,5 @@ func _physics_process(delta):
 	var col = zone.get_color()
 	if col.a > 0:
 		set_percent_visible(1)
+	elif col.a == 0:
+		set_percent_visible(0)
