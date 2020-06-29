@@ -125,6 +125,7 @@ tile_data = PoolIntArray( -851725, 6, 0, -851724, 6, 0, -851723, 6, 0, -851722, 
 [node name="bossFire" parent="." instance=ExtResource( 5 )]
 position = Vector2( 17463, 760 )
 script = ExtResource( 7 )
+hp = 100
 
 [node name="TimerFire1" type="Timer" parent="bossFire"]
 wait_time = 3.0
