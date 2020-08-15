@@ -8,7 +8,7 @@ Our project has been builded thank's to:
 Benjamin COULON,
 Matthias VIRASSAMY,
 Adrian HOARAU,
-Arthur BERTAUD,
+Arthur BERTAUD.
 
 All musics and sounds effects are homemade.
 This project corresponds to more or less a week of work.
