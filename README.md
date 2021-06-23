@@ -23,4 +23,4 @@ Matthias VIRASSAMY,
 Adrian HOARAU,
 Arthur BERTAUD.
 
-This project corresponds to more or less a week of work.
+This project corresponds to more or less than a week of work.
